@@ -4,7 +4,7 @@ const router = express.Router();
 
 router
     .get('/', PersonController.getAllPeople)
-    .post('/create', PersonController.create)
+    .post('/', PersonController.create)
     .delete('/:id', PersonController.deleteById)
-    
+
 module.exports = router;
